@@ -2,6 +2,7 @@
 const { createLogger,  transports } = require('winston');
 const express = require('express');
 const app = express();
+require('./startup/config')();
 
 const logger = createLogger({
         transports: [new transports.Console()]
