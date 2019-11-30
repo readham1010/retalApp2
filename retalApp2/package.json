@@ -1,0 +1,9 @@
+{
+  "name": "retal-app2",
+  "version": "0.0.0",
+  "description": "retalApp2",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}
