@@ -29,6 +29,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="models\genre.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="startup\config.js">
       <SubType>Code</SubType>
     </Compile>
