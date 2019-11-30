@@ -29,6 +29,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="middleware\auth.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="models\genre.js">
       <SubType>Code</SubType>
     </Compile>
@@ -59,6 +62,7 @@
   <ItemGroup>
     <Folder Include="config\" />
     <Folder Include="models\" />
+    <Folder Include="middleware\" />
     <Folder Include="routes\" />
     <Folder Include="startup\" />
   </ItemGroup>
