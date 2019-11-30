@@ -2,8 +2,10 @@
 const { createLogger,  transports } = require('winston');
 const express = require('express');
 const app = express();
+
 require('./startup/logging');
 require('./startup/config')();
+require('./startup/routes')(app);
 
 const logger = createLogger({
         transports: [new transports.Console()]

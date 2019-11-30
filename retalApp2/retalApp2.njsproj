@@ -41,6 +41,9 @@
     <Compile Include="startup\logging.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="startup\routes.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Content Include="config\custom-environment-variables.json">
       <SubType>Code</SubType>
     </Content>
