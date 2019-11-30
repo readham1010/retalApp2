@@ -38,6 +38,9 @@
     <Compile Include="startup\config.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="startup\db.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="startup\logging.js">
       <SubType>Code</SubType>
     </Compile>
