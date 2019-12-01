@@ -35,6 +35,9 @@
     <Compile Include="models\genre.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="models\id.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\genres.js">
       <SubType>Code</SubType>
     </Compile>
