@@ -1,6 +1,6 @@
 ﻿# Movies retalApp2
 
-NodeJS APIs console application to manage renting movies to the customers using Restful APIs.
+NodeJS APIs console application to rent movies to the customers using Restful APIs.
 
 There are 5 API route handlers: users, genres, movies, customers, & rentals
 
@@ -19,16 +19,17 @@ The list of all genres or by id does not need any authorization. Any user can li
 
 Only users with isAdmin=true can delete Genres…etc
 
-To post a new Genre or update a current one, the user must be authonticated via a valid token in the header
+To post a new Genre or update a current one, the user must be authenticated via a valid token in the header
 
 
 ###	Validation of user inputs
 Using Joi library.
 
-###	Express Frameword
+###	Express Framework
 For different RESTFul API endpoints ( Post, Get, Put and Delete):  customers, genres, movies, rentals, users
 
-###	CRUDTto manipulate the database in the backend
+###	CRUD 
+To manipulate the database in the backend
 
 
 ###	Object oriented different concepts 
@@ -48,24 +49,24 @@ Using JSON config files to hide the passwords
 
 
 ### Using middleware functions
-Examples in Genres route handler
+Examples in the Genres route handler
 
 
 I will email a created Postman collection which you can use it directly to test the APIs.
 
 
 ## Open-source Technologies used:
-1- NodeJS backend server application. Needs to be installed on the server. If not, please download the "Recommended for most users" version and installed, from: https://nodejs.org/en/ 
+1- NodeJS backend server application. Needs to be installed on the server. If not, please download the "Recommended for most users" version and installed, from https://nodejs.org/en/ 
 
 2- MongoDb database cluster on the cloud:https://cloud.mongodb.com/user?n=%2Fv2%2F5dc750679ccf64ea64517ea6&nextHash=%23clusters#/atlas/login
 
 You must add your IP address to connect to pass the cluster AWS DB Firewall.
-I will provide username and password separately.
+I will provide the username and password separately.
 ![Firewall](./images/fairewall.JPG)
 
 3- You can install MongoDB Compass as a client to view the database objects: https://www.mongodb.com/download-center/compass
 
-This will allow a user interface to ciew and manipulate the "playground" database on the cloud.
+This will allow a user interface to view and manipulate the "playground" database on the cloud.
 ![compass](./images/compass.JPG)
 
 4- Postman to consume and test the APIs. 
@@ -73,13 +74,13 @@ This will allow a user interface to ciew and manipulate the "playground" databas
 I will email Postman API collection to be used for testing
 
 ## Steps to run this APIs server application
-1- Open commandline on windows (cmd) and cd to the path where you cloned this project from Github.
+1- Open command line of windows (cmd) and cd to the path where you cloned this project from Github.
 
 2- type: node app
 
-3- You should get fatal error as explained below, to remind you to set jwtPrivateKey and dbPassword
+3- You should get the fatal error as explained below, to remind you to set jwtPrivateKey and dbPassword
 
-This is intionally done to for security reason not to keep the token private key in any project config file.
+This is intentionally done for security reason not to keep the token private key in any project config file.
 ![error](./images/error.JPG)
 
 ![error2](./images/dbpass.JPG)
@@ -93,7 +94,7 @@ set rentalApp2_dbPassword=
 I will email the jwtPrivateKey private key and the dbPassword separately
   
    
-4- Once you set the environment variable of the private key password, re run the applicaion by:
+4- Once you set the environment variable of the private key password, re-run the application by:
 
 type: node app
 
@@ -101,7 +102,7 @@ type: node app
 
 5- You should see a message saying running on port 3000.... 
  connected to MongoDB.
-This mean the server is up and running.
+This means that the server is up and running.
 ![suceess](./images/running-success.JPG)
 
 
@@ -110,10 +111,10 @@ This mean the server is up and running.
 
  There are 5 route handlers: users, genres, movies, customers, & rentals
 
- all body input are in raw JSON format
+ all body input should be provided in raw JSON format
 
 
- Example of how to to test the different API endpoints 
+ Example of how to test the different API endpoints 
 1- Register a user: http://localhost:3000/api/users
 
 
@@ -142,7 +143,7 @@ Method: Get
 
 Body: NA
 
-Header: x-auth-token & a valide token value ( you can get it from the response header of the Register a new user)
+Header: x-auth-token & a valid token value ( you can get it from the response header of the Register a new user)
 
 Response:
 
@@ -160,7 +161,7 @@ on failure: 400 Bad request, invalide token
 
 3- Get all genres: http://localhost:3000/api/genres
 
-It is for all visitors of the website thus, can be called withouth authontication token.
+It is for all visitors of the website thus, can be called without an authentication token.
 Method: Get
 
 Body: NA
@@ -173,13 +174,13 @@ Response: on success, JSON object of all Genres.
 
 4- Post a new Genre:http://localhost:3000/api/genres
 
-Only authonticated users can add new Genres.
+Only authenticated  users can add new Genres.
 
-You need to pass a valid toked to the header " x-auth-token" attribute when calling this API aotherwhise will get errer Access denied
+You need to pass a valid token to the header " x-auth-token" attribute when calling this API otherwise  will get error Access denied
 
 Method: Post
 
-Body: rway JSON object
+Body: raw JSON object
 
 {
 	
