@@ -6,7 +6,7 @@ const express = require('express');
 const router = express.Router();
 
 
-// anyone can list genres. No need to check authontication nor authorization
+// anyone can list genres. No need to check authontication or authorization
 router.get('/', async (req, res) => {
     const genres = await Genre.find().sort('name');
     if (!genres) { res.status(404).send('no genries found'); return; }
