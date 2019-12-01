@@ -6,13 +6,13 @@ There are 5 API route handlers: users, genres, movies, customers, & rentals
 
 In this demo I have implemented the following techniques, but not limited to:
 
-1-	Authentication using JWT tokens and salt for password hashing.
+##	Authentication using JWT tokens and salt for password hashing.
 
 
 You get the token as a response header in Post a user API endpoint. Then you can use this token as request header in other API Endpoints
 
 
-2-	Authorization strategies. 
+##	Authorization strategies. 
 
 Examples in  Genres route handler:
 
@@ -23,29 +23,32 @@ Only users with isAdmin=true can delete Genres…etc
 To post a new Genre or update a current one, the user must be authonticated via a valid token in the header
 
 
-3-	Validation of user inputs – using Joi library.
+##	Validation of user inputs – using Joi library.
 
-4-	Express route handler for different RESTFul API endpoints ( Post, Get, Put and Delete):  customers, genres, movies, rentals, users
+##	Express route handler for different RESTFul API endpoints ( Post, Get, Put and Delete):  customers, genres, movies, rentals, users
 
-5-	CRUD to manipulate the database in the backend
-
-
-6-	Classes ( models) and object oriented different concepts…
+##	CRUD to manipulate the database in the backend
 
 
-7-	Async programming, await
+##	)bject oriented different concepts 
+( classes, composition, denormalization…)
 
 
-8-	Error handling and logging mechanism using different libraries and also console
+##	Async programming, await
 
 
-9-	Using Configuration files to handle hidden password 
+##	Error handling and logging mechanism using different libraries and also console
 
 
-10- Using middleware functions examples in Genres route handler
+##	Using Configuration 
+JSON config files to hide the passwords 
 
 
-11-	Also for simplicity, I have attached a created Postman collection which you can use it directly to test the APIs.
+## Using middleware functions
+Examples in Genres route handler
+
+
+Also for simplicity, I have attached a created Postman collection which you can use it directly to test the APIs.
 
 
 ## Open-source Technologies used:
