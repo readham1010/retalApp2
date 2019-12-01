@@ -35,6 +35,9 @@
     <Compile Include="middleware\auth.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="models\customer.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="models\genre.js">
       <SubType>Code</SubType>
     </Compile>
