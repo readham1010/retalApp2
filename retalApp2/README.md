@@ -1,6 +1,6 @@
-﻿# Movies rental retalApp2
+﻿# Movies retalApp2
 
-NodeJS APIs console application to manage renting movies business using Restful APIs.
+NodeJS APIs console application to manage renting movies to the customers using Restful APIs.
 
 There are 5 API route handlers: users, genres, movies, customers, & rentals
 
