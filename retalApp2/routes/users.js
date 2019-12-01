@@ -5,7 +5,10 @@ const { User, validate } = require('../models/user');
 const express = require('express');
 const router = express.Router();
 
-router.get('/me',  async (req, res) => {
+// As a security control, get logged user info by passing me 
+// get user_id from JWT payload 
+router.get('/me', auth, async (req, res) => {
+    console.log("req.user", req.user);
     const user = await User.findById(req.user._id).select('-password');
     res.send(user);
 });
