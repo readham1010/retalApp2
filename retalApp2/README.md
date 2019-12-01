@@ -5,13 +5,13 @@ NodeJS APIs console application to manage renting movies business using Restful 
 
 
 ## Open-source Technologies used:
-1- NodeJS backend server application
+1- NodeJS backend server application. Needs to be installed on the server. If not, please download the "Recommended for most users" version and installed, from: https://nodejs.org/en/ 
 
 2- MongoDb database cluster on the cloud:https://cloud.mongodb.com/user?n=%2Fv2%2F5dc750679ccf64ea64517ea6&nextHash=%23clusters#/atlas/login
 
 You must add your IP address to connect to pass the cluster AWS DB Firewall.
 I will provide username and password separately.
-![Firewall](./images/firewall.JPG)
+![Firewall](./images/fairewall.JPG)
 
 3- You can install MongoDB Compass as a client to view the database objects: https://www.mongodb.com/download-center/compass
 
@@ -22,32 +22,25 @@ This will allow a user interface to ciew and manipulate the "playground" databas
 
 I will email Postman API collection to be used for testing
 
-## Prerequisites and steps to run this APIs application
-1- NodeJS should be installed on your running machine. If not installed, head to: https://nodejs.org/en/ and download the "Recommended for most users"
+## Steps to run this APIs server application
+1- Open commandline on windows (cmd) and cd to the path where you cloned this project from Github.
 
-2- Once NodeJS is istalled, open commandline and cd to the path where you cloned this project from Github.
+2- type: node app
 
-3- You need to set jwtPrivateKey and dbPassword
+3- You should get fatal error as explained below, to remind you to set jwtPrivateKey and dbPassword
 
-otherwise, when you run the listener, you will get fatal error as explained below
-
-
-type: node app and press Enter Key
-
- Most propbley, you will get : "FATAL ERROR" jwtPrivateKey is not defined.
-
- This is intionally done to for security reason not to keep the token private key in any project config file.
-All you need to do is to head to the path on cmd and type this command I am going to send by email for security reasons.
-set project1_jwtPrivateKey= 
-
-I will email the jwtPrivateKey private key separately
-  
+This is intionally done to for security reason not to keep the token private key in any project config file.
 ![error](./images/error.JPG)
 
-===========================
-set rentalApp2_dbPassword
 ![error2](./images/dbpass.JPG)
 
+All you need to do is to head to the path on cmd and type this command I am going to send by email for security reasons.
+set project1_jwtPrivateKey= 
+set rentalApp2_dbPassword=
+
+I will email the jwtPrivateKey private key and the dbPassword separately
+  
+   
 4- Once you set the environment variable of the private key password, re run the applicaion by:
 
 type: node app
