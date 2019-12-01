@@ -62,6 +62,9 @@
     <Compile Include="routes\movies.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="routes\rentals.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\users.js">
       <SubType>Code</SubType>
     </Compile>
