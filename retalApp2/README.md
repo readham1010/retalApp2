@@ -85,7 +85,7 @@ This is intentionally done for security reason not to keep the token private key
 
 ![error2](./images/dbpass.JPG)
 
-All you need to do is to head to the path on cmd and type this command I am going to send by email for security reasons.
+All you need to do is to head to the path on cmd and type this command I am going to email the key and the password for security reasons.
 set project1_jwtPrivateKey= 
 
 
