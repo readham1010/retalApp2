@@ -2,6 +2,8 @@
 const jwt = require('jsonwebtoken');
 const Joi = require('joi');
 const mongoose = require('mongoose');
+// to avoid deprication warning
+mongoose.set('useCreateIndex', true);
 
 const userSchema = new mongoose.Schema({
     name: {
