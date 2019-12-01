@@ -29,6 +29,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="middleware\admin.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="middleware\auth.js">
       <SubType>Code</SubType>
     </Compile>
