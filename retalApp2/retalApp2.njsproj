@@ -47,6 +47,9 @@
     <Compile Include="models\movie.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="models\rental.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="models\user.js">
       <SubType>Code</SubType>
     </Compile>
