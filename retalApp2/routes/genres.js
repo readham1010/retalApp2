@@ -25,7 +25,7 @@ router.post('/', auth, async (req, res) => {
 });
 
 // only authonticated users can update current Genres
-router.put('/:id', async (req, res) => {
+router.put('/:id', auth, async (req, res) => {
     
     if (!validateId(req.params.id)) return res.status(400).send("Invalid object id");
 
