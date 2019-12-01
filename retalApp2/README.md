@@ -1,7 +1,51 @@
 ﻿# retalApp2
 
-NodeJS APIs console application to manage renting movies business using Restful APIs.
+NodeJS APIs demo console application to manage renting movies business using Restful APIs.
 
+There are 5 API route handlers: users, genres, movies, customers, & rentals
+
+In this demo I have implemented the following techniques, but not limited to:
+
+1-	Authentication using JWT tokens and salt for password hashing.
+
+
+You get the token as a response header in Post a user API endpoint. Then you can use this token as request header in other API Endpoints
+
+
+2-	Authorization strategies. 
+
+Examples in  Genres route handler:
+
+The list of all genres or by id does not need any authorization. Any user can list the genres
+
+Only users with isAdmin=true can delete Genres…etc
+
+To post a new Genre or update a current one, the user must be authonticated via a valid token in the header
+
+
+3-	Validation of user inputs – using Joi library.
+
+4-	Express route handler for different RESTFul API endpoints ( Post, Get, Put and Delete):  customers, genres, movies, rentals, users
+
+5-	CRUD to manipulate the database in the backend
+
+
+6-	Classes ( models) and object oriented different concepts…
+
+
+7-	Async programming, await
+
+
+8-	Error handling and logging mechanism using different libraries and also console
+
+
+9-	Using Configuration files to handle hidden password 
+
+
+10- Using middleware functions examples in Genres route handler
+
+
+11-	Also for simplicity, I have attached a created Postman collection which you can use it directly to test the APIs.
 
 
 ## Open-source Technologies used:
@@ -36,6 +80,8 @@ This is intionally done to for security reason not to keep the token private key
 
 All you need to do is to head to the path on cmd and type this command I am going to send by email for security reasons.
 set project1_jwtPrivateKey= 
+
+
 set rentalApp2_dbPassword=
 
 I will email the jwtPrivateKey private key and the dbPassword separately
@@ -53,22 +99,18 @@ This mean the server is up and running.
 ![suceess](./images/running-success.JPG)
 
 
-## MongoDB on the cloud:
-
-1- You don't need to install the DB as it is already on the cloud: path: 
-
-2- If you want an interface to log on the DB on the clound see the updates when calling the APIs, 
-you can download MongoDB Compass Communicy Eddition: https://docs.mongodb.com/manual/administration/install-community/
-
-I will email the user name and password separatelly
-
-![mongoDB](./images/mongodb.JPG)
 ## Details of the APIs endpoints and how to test them:
- Postman to test the APIs
+ you can use Postman to test the APIs
 
  There are 5 route handlers: users, genres, movies, customers, & rentals
- 
+
+ all body input are in raw JSON format
+
+
+ Example of how to to test the different API endpoints 
 1- Register a user: http://localhost:3000/api/users
+
+
 
 Method: Post
 
@@ -80,7 +122,11 @@ Body:raw Jason
 }
 
 Response: on success is 200 with x-auth-token access token in the header as shown in the image below.
+
+You can copy the token to use it as a request header to update/ post Genres
+
 ![register](./images/register-user.JPG)
+
 
 2- Get logged user info: http://localhost:3000/api/users/me
 
