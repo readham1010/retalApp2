@@ -50,6 +50,9 @@
     <Compile Include="models\user.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="routes\customers.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\genres.js">
       <SubType>Code</SubType>
     </Compile>
