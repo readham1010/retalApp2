@@ -1,12 +1,14 @@
 ﻿//const winston = require('winston');
 const mongoose = require('mongoose');
+const config = require('config');
 
 module.exports = function () {
-    
-    mongoose.connect('mongodb+srv://readham:White123@cluster0-y7udi.mongodb.net/playground', {// return a promise
+   // console.log(config.get('mongoDBPasswod'));
+    mongoose.connect('mongodb+srv://readham:'+config.get('mongoDBPasswod')+'@cluster0-y7udi.mongodb.net/playground', {// return a promise
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
+    
         .then(() => {
             console.log('Connected to MongoDB')
         })
