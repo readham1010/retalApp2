@@ -68,6 +68,7 @@
     <Content Include="config\default.json">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="images\dbpass.JPG" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
@@ -75,6 +76,7 @@
     <Folder Include="config\" />
     <Folder Include="models\" />
     <Folder Include="middleware\" />
+    <Folder Include="images\" />
     <Folder Include="routes\" />
     <Folder Include="startup\" />
   </ItemGroup>
