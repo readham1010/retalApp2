@@ -44,6 +44,9 @@
     <Compile Include="routes\genres.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="routes\users.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="startup\config.js">
       <SubType>Code</SubType>
     </Compile>
