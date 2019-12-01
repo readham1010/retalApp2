@@ -93,8 +93,10 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="images\all-genres.JPG" />
+    <Content Include="images\compass.JPG" />
     <Content Include="images\dbpass.JPG" />
     <Content Include="images\error.JPG" />
+    <Content Include="images\fairewall.JPG" />
     <Content Include="images\invalid-token.JPG" />
     <Content Include="images\me-success.JPG" />
     <Content Include="images\mongodb.JPG" />

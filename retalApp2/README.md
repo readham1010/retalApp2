@@ -9,10 +9,16 @@ NodeJS APIs console application to manage renting movies business using Restful 
 
 2- MongoDb database cluster on the cloud:https://cloud.mongodb.com/user?n=%2Fv2%2F5dc750679ccf64ea64517ea6&nextHash=%23clusters#/atlas/login
 
+You must add your IP address to connect to pass the cluster AWS DB Firewall.
+I will provide username and password separately.
+![Firewall](./images/firewall.JPG)
 
-I will provide username and password separately
+3- You can install MongoDB Compass as a client to view the database objects: https://www.mongodb.com/download-center/compass
 
-3- Postman to consume and test the APIs. 
+This will allow a user interface to ciew and manipulate the "playground" database on the cloud.
+![compass](./images/compass.JPG)
+
+4- Postman to consume and test the APIs. 
 
 I will email Postman API collection to be used for testing
 
@@ -23,7 +29,7 @@ I will email Postman API collection to be used for testing
 
 3- You need to set jwtPrivateKey and dbPassword
 
-otherwise, when you run the listener, you will get fatal error as ecplained below
+otherwise, when you run the listener, you will get fatal error as explained below
 
 
 type: node app and press Enter Key
