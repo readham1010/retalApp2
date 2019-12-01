@@ -1,4 +1,5 @@
 ﻿const auth = require('../middleware/auth');
+const admin = require('../middleware/admin');
 const { Genre, validate } = require('../models/genre');
 const { validateId } = require('../models/id');
 const express = require('express');
@@ -42,7 +43,7 @@ router.put('/:id', auth, async (req, res) => {
     res.send(genre);
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', [auth, admin],async (req, res) => {
 
     if (!validateId(req.params.id)) return res.status(400).send("Invalid object id");
     const genre = await Genre.findByIdAndRemove(req.params.id, { useFindAndModify:false});
@@ -51,8 +52,8 @@ router.delete('/:id', async (req, res) => {
 
     res.send(genre);
 });
-
-router.get('/:id', async (req, res) => {
+//Only authorized users of type Admin can delete Genres
+router.get('/:id',  async (req, res) => {
     if (!validateId(req.params.id)) return res.status(400).send("Invalid object id");
     const genre = await Genre.findById(req.params.id);
 
