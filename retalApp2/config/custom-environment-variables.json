@@ -1,3 +1,4 @@
 ﻿{
-  "jwtPrivateKey": "rentalApp2_jwtPrivateKey"
+  "jwtPrivateKey": "rentalApp2_jwtPrivateKey",
+  "mongoDBPasswod": "rentalApp2_dbPassword"
 }
