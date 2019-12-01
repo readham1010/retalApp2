@@ -12,7 +12,7 @@ module.exports = function () {
 
     winston.add(winston.transports.File, { filename: 'logfile.log' });
     winston.add(winston.transports.MongoDB, {
-        db: 'mongodb+srv://<username>:<password>@cluster0-y7udi.mongodb.net/rental',
+        db: 'mongodb+srv://<username>:<password>@cluster0-y7udi.mongodb.net/playground',
         level: 'info'
     });
 }
