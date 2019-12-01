@@ -1,6 +1,6 @@
-﻿# retalApp2
+﻿# Movies rental retalApp2
 
-NodeJS APIs demo console application to manage renting movies business using Restful APIs.
+NodeJS APIs console application to manage renting movies business using Restful APIs.
 
 There are 5 API route handlers: users, genres, movies, customers, & rentals
 
@@ -8,9 +8,7 @@ In this demo I have implemented the following techniques, but not limited to:
 
 ##	Authentication using JWT tokens and salt for password hashing.
 
-
 You get the token as a response header in Post a user API endpoint. Then you can use this token as request header in other API Endpoints
-
 
 ##	Authorization strategies. 
 
