@@ -4,13 +4,14 @@ NodeJS APIs console application to manage renting movies to the customers using 
 
 There are 5 API route handlers: users, genres, movies, customers, & rentals
 
+## Techniques used
 In this demo I have implemented the following techniques, but not limited to:
 
-##	Authentication using JWT tokens and salt for password hashing.
+###	Authentication using JWT tokens and salt for password hashing.
 
 You get the token as a response header in Post a user API endpoint. Then you can use this token as request header in other API Endpoints
 
-##	Authorization strategies. 
+###	Authorization strategies. 
 
 Examples in  Genres route handler:
 
@@ -21,32 +22,36 @@ Only users with isAdmin=true can delete Genres…etc
 To post a new Genre or update a current one, the user must be authonticated via a valid token in the header
 
 
-##	Validation of user inputs – using Joi library.
+###	Validation of user inputs
+Using Joi library.
 
-##	Express route handler for different RESTFul API endpoints ( Post, Get, Put and Delete):  customers, genres, movies, rentals, users
+###	Express Frameword
+For different RESTFul API endpoints ( Post, Get, Put and Delete):  customers, genres, movies, rentals, users
 
-##	CRUD to manipulate the database in the backend
+###	CRUDTto manipulate the database in the backend
 
 
-##	)bject oriented different concepts 
+###	Object oriented different concepts 
 ( classes, composition, denormalization…)
 
 
-##	Async programming, await
+###	Async programming
+ example, await ...
 
 
-##	Error handling and logging mechanism using different libraries and also console
+###	Error handling and logging mechanism
+Using different libraries and also console
 
 
-##	Using Configuration 
-JSON config files to hide the passwords 
+###	Secure passwords 
+Using JSON config files to hide the passwords 
 
 
-## Using middleware functions
+### Using middleware functions
 Examples in Genres route handler
 
 
-Also for simplicity, I have attached a created Postman collection which you can use it directly to test the APIs.
+I will email a created Postman collection which you can use it directly to test the APIs.
 
 
 ## Open-source Technologies used:
