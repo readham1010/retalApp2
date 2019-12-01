@@ -50,6 +50,9 @@
     <Compile Include="routes\genres.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="routes\movies.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\users.js">
       <SubType>Code</SubType>
     </Compile>
@@ -63,6 +66,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="startup\routes.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="startup\validation.js">
       <SubType>Code</SubType>
     </Compile>
     <Content Include="config\custom-environment-variables.json">
