@@ -68,7 +68,15 @@
     <Content Include="config\default.json">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="images\all-genres.JPG" />
     <Content Include="images\dbpass.JPG" />
+    <Content Include="images\error.JPG" />
+    <Content Include="images\invalid-token.JPG" />
+    <Content Include="images\me-success.JPG" />
+    <Content Include="images\mongodb.JPG" />
+    <Content Include="images\register-user.JPG" />
+    <Content Include="images\running-success.JPG" />
+    <Content Include="images\valide-jwt.JPG" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
